@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Product Card</title>
+    <link rel="stylesheet" href="simpcard.css">
+</head>
+
+<body>
+    <div class="product-card">
+        <h1>Gamepad</h1>
+        <img src="white.jpeg" alt="" id="product-image">
+        <div class="colors">
+            <div onclick="changeImage('white')" id="white" class="color"></div>
+            <div onclick="changeImage('red')" id="red" class="color red"></div>
+            <div onclick="changeImage('blue')" id="blue" class="color blue"></div>
+        </div>
+        <button>Detail</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
