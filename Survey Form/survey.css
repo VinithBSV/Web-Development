@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #ff3cac 0%, #784bae 50%, #2b86c5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title {
+    font-size: 45px;
+    text-decoration: wavy underline;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#survey-form {
+    border: 2px purple solid;
+    border-radius: 10px;
+    width: auto;
+    height: 500px;
+}
+
+fieldset {
+    justify-content: center;
+    align-items: first baseline;
+    font-size: 1.2rem;
+    border: 1px solid beige;
+    border-top: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+legend,
+label {
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+label,
+input {
+    display: inline;
+}
+
+input {
+    border: 1px solid black;
+    font-size: 1.25rem;
+}
+
+#last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    width: 400px;
+    max-width: 500px;
+    max-height: 125px;
+    height: 100px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+}
+
+#submit {
+    color: #7209b7;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #7209b7;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    border-color: white;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #7209b7;
+    transform: translateY(-0.25em);
+    background-color: #784bae;
+}

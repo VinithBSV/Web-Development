@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <link href="survey.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Congratulation on completing the course. Please fill this survey form</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name <input type="text" id="name" required
+                    placeholder="Enter your name"></label>
+            <label id="email-label" for="email">Email <input type="email" id="email" required
+                    placeholder="Enter your email"></label>
+            <label id="number-label" for="number">Age <input type="number" id="number" min="13" max="25"
+                    placeholder="Age"></label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" class="gender" value="male" name="gender" checked><label
+                for="male">Male</label>
+            <input type="radio" id="female" class="gender" name="gender" value="female"><label
+                for="female">Female</label>
+            <input type="radio" class="gender" id="others" name="gender" value="others"><label
+                for="other">Others</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> Which option best describes your current role?
+                <select id="dropdown">
+                    <option value="">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Full time Learner</option>
+                    <option value="4">Prefer not to say </option>
+                    <option value="5">Others</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Interesting topics during the course</legend>
+            <input type="checkbox" id="project" class="topics" value="project" name="project">
+            <label for="project">Project</label>
+            <input type="checkbox" id="challenges" class="topics" value="challenges" name="challenges">
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" id="videos" class="topics" value="videos" name="videos">
+            <label for=videos">Videos</label>
+        </fieldset>
+        <fieldset id="last">
+            <legend>Any Comments</legend>
+            <textarea id="comment"></textarea></label>
+        </fieldset>
+        <fieldset class="btn">
+            <input type="Submit" id="submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
