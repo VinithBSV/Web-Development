@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #ff3cac 0%, #784bae 50%, #2b86c5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+i {
+    opacity: 0.5;
+}
+
+input {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+form {
+    width: 90%;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #784bae;
+    color: white;
+    animation: shake 0.5s ease-in-out;
+}
+
+.card {
+    padding: 20px;
+    display: none;
+    width: 300px;
+    height: 400px;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    display: flex;
+}
+
+.switchText {
+    color: blue;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.switchText:hover {
+    cursor: pointer;
+}
+
+.link-login {
+    position: relative;
+    bottom: -20px;
+    font-size: 1rem;
+}
+
+.link-signUp {
+    position: relative;
+    bottom: -10px;
+    font-size: 1rem;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: rotate(5deg) translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-15deg) translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: rotate(15deg) translateX(100%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(0) translateX(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}

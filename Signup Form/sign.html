@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <section id="signup" class="card">
+        <h2><i class="bi bi-person-fill"></i>New account</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="password-repeat">Password repeat:</label>
+                <input type="password-repeat" name="password-repeat">
+            </div>
+            <button type="submit">Create</button>
+        </form>
+        <p class="link-signup">
+            Already had an account? <span class="switchText" onclick="switchToLogIn()">Sign in!</span>
+        </p>
+    </section>
+    <section id="login" class="card active">
+        <h2><i class="bi bi-key-fill"></i>Sign In</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <p class="link-login">
+            Don't have an account yet? <span class="switchText" onclick="switchToSignUp()">Sign up!</span>
+        </p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
