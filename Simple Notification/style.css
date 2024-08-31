@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    font-family: monospace;
+    padding: 15px;
+}
+
+.notifi {
+    opacity: 0;
+    border-radius: 5px;
+    width: 350px;
+    height: 100px;
+    background: white;
+    animation: forwards show 5s;
+}
+
+.notifi-text {
+    padding: 5px 15px;
+}
+
+.loader {
+    width: 0%;
+    background: green;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    animation: load 5s forwards;
+}
+
+@keyframes show {
+    5% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
