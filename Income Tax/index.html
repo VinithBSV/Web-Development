@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income tax calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <div class="calculator">
+        <h2>Income Tax</h2>
+        <div>
+            <label for="income">Income :</label>
+            <input type="number" class="income" placeholder="Enter your income">
+        </div>
+        <div>
+            <p>Tax to be paid :</p>
+            <p class="tax"></p>
+        </div>
+        <button class="calculate" onclick="calcTax()"><svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%">
+            </svg>Calculate</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
