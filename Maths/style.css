@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 10px;
+}
+
+p {
+    font-size: 25px;
+}
+
+hr {
+    width: 100%
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    justify-content: space-evenly;
+    gap: 25px;
+
+}
+
+.table,
+.fact,
+.even,
+.sq {
+    border: 2px solid white;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    gap: 5px;
+}
+
+button {
+    background: none;
+    border: orangered 2px solid;
+    color: cyan;
+    font-size: 1em;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+button:hover {
+    border-color: cyan;
+    color: orangered;
+    box-shadow: 0 0.5em 0.5em -0.4em cyan;
+    transform: translateY(-0.25em);
+
+}
