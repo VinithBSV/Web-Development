@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="slider">
+        <div class="slides">
+            <!-- First image -->
+            <div class="slide">
+                <img src="Vijay.jpeg" alt="Image 1">
+            </div>
+            <!-- Second image -->
+            <div class="slide">
+                <img src="Ronaldo.jpeg" alt="Image 2">
+            </div>
+            <!-- Third image -->
+            <div class="slide">
+                <img src="John Cena.jpeg" alt="Image 3">
+            </div>
+            <!-- Fourth Image-->
+            <div class="slide">
+                <img src="Sachin Tendulkar.jpeg" alt="Image 4">
+            </div>
+            <!-- Fifth Image-->
+            <div class="slide">
+                <img src="SRK.jpeg" alt="Image 5">
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
