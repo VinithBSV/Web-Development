@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends List with Drag-and-Drop</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <h1>Friends List</h1>
+
+    <div class="filters">
+        <label>
+            Location:
+            <select id="locationFilter">
+                <option value="">All</option>
+                <option value="New York">New York</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Chicago">Chicago</option>
+            </select>
+        </label>
+        <label>
+            Job:
+            <select id="jobFilter">
+                <option value="">All</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Designer">Designer</option>
+                <option value="Teacher">Teacher</option>
+            </select>
+        </label>
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <div class="friend-list" id="friendList">
+        <!-- Friend cards -->
+        <div class="friend" draggable="true" data-location="New York" data-job="Engineer">
+            <strong>Name:</strong> John Doe<br>
+            <strong>DOB:</strong> 1990-01-01<br>
+            <strong>Location:</strong> New York<br>
+            <strong>Job:</strong> Engineer
+        </div>
+        <div class="friend" draggable="true" data-location="San Francisco" data-job="Designer">
+            <strong>Name:</strong> Jane Smith<br>
+            <strong>DOB:</strong> 1985-05-15<br>
+            <strong>Location:</strong> San Francisco<br>
+            <strong>Job:</strong> Designer
+        </div>
+        <div class="friend" draggable="true" data-location="Chicago" data-job="Teacher">
+            <strong>Name:</strong> Mike Johnson<br>
+            <strong>DOB:</strong> 1992-03-20<br>
+            <strong>Location:</strong> Chicago<br>
+            <strong>Job:</strong> Teacher
+        </div>
+    </div>
+
+    <div class="drop-zone" id="dropZone">Drop here</div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
